@@ -1,0 +1,12 @@
+/* Estilo para o conteúdo abaixo da barra de navegação */
+.content {
+    margin-top: 60px;
+    padding: 20px;
+}
+.content h1 {
+    color: #333;
+}
+#simple-text {
+    max-width: 40%;
+    line-height: 35px;
+}

@@ -1,0 +1,24 @@
+<div class="navbar">
+  <h1>{{ title }}</h1>
+</div>
+
+<div class="floating-buttons">
+  <ul>
+    <li><a routerLink="/recipes" routerLinkActive="active" ariaCurrentWhenActive="page"><button class="float-btn" ><fa-icon [icon]="faCoffee"></fa-icon></button></a></li>
+    <li><a routerLink="/profile" routerLinkActive="active" ariaCurrentWhenActive="page"><button class="float-btn" ><fa-icon [icon]="faUser" ></fa-icon></button></a></li>
+    <li><a routerLink="/interests" routerLinkActive="active" ariaCurrentWhenActive="page"><button class="float-btn" ><fa-icon [icon]="faSearch" ></fa-icon></button></a></li>
+    <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><button class="float-btn"><fa-icon [icon]="faHome" ></fa-icon></button></a></li>
+  </ul>
+</div>
+
+
+
+<div class="content">
+
+  <div *ngIf="showWelcomeText" class="welcome-text">
+    <h1>Bem-vindo ao {{subTitle}}</h1>
+    <p>Este é o texto de boas-vindas que será ocultado ao navegar para outra página.</p>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
